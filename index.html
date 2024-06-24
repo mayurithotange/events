@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="load()">
+  <!-- click events -->
+    <button onclick="console.log('Button1')">Button one</button>
+<br>
+<br>
+         <button onclick="console.log('Button2')">Button Two</button>
+         <br>
+         <br>
+         <img src="images.avif" height="150px" width="150px" ondblclick="dbl()"/>
+         <br>
+         <br>
+        <!-- key events -->
+         <input type="text" onkeypress="keyPress()" 
+         onkeydown="keyDown()"
+         onkeyup="keyUp()"/>
+         <br>
+         <br>
+         <br>
+         <!-- mouse events -->
+         <img src="images.avif" height="150px" width="150px" onmouseover="imageOver()"/>
+         <br>
+         <br>
+         <br>
+         <img src="images.avif" height="150px" width="150px" onmouseout="imageOut()"/>
+         <br>
+         <br>
+         <br>
+         <img src="images.avif" height="150px" width="150px" onmousemove="imageOver()"/>
+         <br>
+         <br>
+         <br>
+  <!-- general events -->
+
+</body>
+<script>
+   
+    function dbl(){
+       alert('Awesome'); 
+    }
+
+    function keyPress(){
+        console.log('keyPress()')
+       }
+
+       function keyDown(){
+        console.log('keyDown()')
+       }
+
+       function keyUp(){ 
+        console.log('keyUp()')
+       }
+
+       function imageOver(){
+            console.log("Image Over")
+        }
+        function imageOut(){
+            console.log("Image Out")
+        }
+        function imageOver(){
+        const number = Math.random();
+        console.log(`Image Over: ${number}`); 
+    }
+    function load(){
+            alert("Page Loading")
+        }
+</script>
+</html>
